@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.content-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-img h2{
+    text-align: right;
+}
+
+.imagem{
+    width: 500px;
+}
+
+.container{
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #f8f8f8;;
+    border: none;
+}
+
+.header{
+    margin: 15px;
+    text-align: center;
+    color: black
+}
+
+.form{
+    padding: 20px;
+    flex-flow: nowrap;
+}
+
+.form .form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form .form-control label{
+    text-align: center;
+}
+
+.form .form-control input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 10px;
+    outline: none;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #f15e5e;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: #eb3535;
+}
+
+.container #title-result{
+    margin-left: 10px;
+}
+
+.container #result p{
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 12px;                                                                                         
+}
+
+@media screen and (max-width:700px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+
+    }
+
+    .content-img img{
+        width: 100%;
+        margin-top: 40px;
+    }   
+
+    .content-img h2{
+        display: none;
+    }
+
+    .container {
+        background-color: white;
+      
+    }
+
+    #result{
+        margin-bottom: 12px;
+    }
+
+}
+
+
+
